@@ -81,7 +81,7 @@ function Signup(){
                 // const result = await response.text();
                 
                 // console.log(result);
-                await fetch("http://localhost:80/sendotp",options).then((response)=>{
+                await fetch("http://13.235.243.86:9000/sendotp",options).then((response)=>{
                     console.log(response);
                     return response.json();
 

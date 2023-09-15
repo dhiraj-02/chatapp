@@ -35,7 +35,7 @@ function Signup(){
         await get(child(dbref,"users/")).then((snapshot)=>{
           if(snapshot.exists()){
             var usrArray = snapshot.val().list;
-            console.log(usrArray);
+            //console.log(usrArray);
             setUsers(usrArray);                
           }
         })
